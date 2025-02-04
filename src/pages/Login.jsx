@@ -41,35 +41,37 @@ class Login extends Component {
     const num = 3;
     return (
       <div className="page-login">
-        <h1>noTunes</h1>
-        <form onSubmit={(e) => e.preventDefault()}>
-          <input
-            name="nameInput"
-            value={nameInput}
-            placeholder="Insira o seu nome"
-            type="text"
-            className="login-name-input"
-            onChange={this.handleChange}
-          />
-          <input
-            name="emailInput"
-            value={emailInput}
-            placeholder="Insira o seu email"
-            type="text"
-            className="login-email-input"
-            onChange={this.handleChange}
-          />
-          <button
-            type="submit"
-            data-testid="login-submit-button"
-            disabled={emailInput.length < num}
-            onClick={() => this.onSaveInput(nameInput, emailInput)}
-          >
-            Entrar
-          </button>
-          {loading ? <Loading /> : <span />}
-        </form>
-        {redirect ? <Redirect to="/search" /> : null}
+        <main>
+          <h1 className="login-title">noTunes</h1>
+          <form onSubmit={(e) => e.preventDefault()}>
+            <input
+              name="nameInput"
+              value={nameInput}
+              placeholder="Insira o seu nome"
+              type="text"
+              className="login-name-input"
+              onChange={this.handleChange}
+            />
+            <input
+              name="emailInput"
+              value={emailInput}
+              placeholder="Insira o seu email"
+              type="text"
+              className="login-email-input"
+              onChange={this.handleChange}
+            />
+            <button
+              type="submit"
+              data-testid="login-submit-button"
+              disabled={emailInput.length < num}
+              onClick={() => this.onSaveInput(nameInput, emailInput)}
+            >
+              Entrar
+            </button>
+            {loading ? <Loading /> : <span />}
+          </form>
+          {redirect ? <Redirect to="/search" /> : null}
+        </main>
       </div>
     );
   }
