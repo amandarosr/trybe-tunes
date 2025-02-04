@@ -1,14 +1,14 @@
-import { Component } from 'react';
-import PropTypes from 'prop-types';
-import { Redirect } from 'react-router-dom';
-import { createUser } from '../services/userAPI';
-import Loading from '../components/Loading';
-import '../style/Login.css';
+import { Component } from "react";
+import PropTypes from "prop-types";
+import { Redirect } from "react-router-dom";
+import { createUser } from "../services/userAPI";
+import Loading from "../components/Loading";
+import "../style/Login.css";
 
 class Login extends Component {
   state = {
-    nameInput: '',
-    emailInput: '',
+    nameInput: "",
+    emailInput: "",
     loading: false,
     redirect: false,
   };
@@ -25,11 +25,15 @@ class Login extends Component {
       loading: true,
     });
     await createUser({ name: input1, email: input2 });
-    this.setState({
-      loading: false,
-    }, () => this.setState({
-      redirect: true,
-    }));
+    this.setState(
+      {
+        loading: false,
+      },
+      () =>
+        this.setState({
+          redirect: true,
+        })
+    );
   };
 
   render() {
@@ -37,34 +41,35 @@ class Login extends Component {
     const num = 3;
     return (
       <div className="page-login">
-        <form onSubmit={ (e) => e.preventDefault() }>
-        <input
+        <h1>noTunes</h1>
+        <form onSubmit={(e) => e.preventDefault()}>
+          <input
             name="nameInput"
-            value={ nameInput }
+            value={nameInput}
             placeholder="Insira o seu nome"
             type="text"
             className="login-name-input"
-            onChange={ this.handleChange }
+            onChange={this.handleChange}
           />
           <input
             name="emailInput"
-            value={ emailInput }
+            value={emailInput}
             placeholder="Insira o seu email"
             type="text"
             className="login-email-input"
-            onChange={ this.handleChange }
+            onChange={this.handleChange}
           />
           <button
             type="submit"
             data-testid="login-submit-button"
-            disabled={ emailInput.length < num }
-            onClick={ () => this.onSaveInput(nameInput, emailInput) }
+            disabled={emailInput.length < num}
+            onClick={() => this.onSaveInput(nameInput, emailInput)}
           >
             Entrar
           </button>
-          { loading ? <Loading /> : <span />}
+          {loading ? <Loading /> : <span />}
         </form>
-        { redirect ? <Redirect to="/search" /> : null }
+        {redirect ? <Redirect to="/search" /> : null}
       </div>
     );
   }
