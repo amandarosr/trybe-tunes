@@ -41,7 +41,7 @@ class Login extends Component {
     const num = 3;
     return (
       <div className="page-login">
-        <main>
+        <div className="page-main">
           <h1 className="login-title">noTunes</h1>
           <form onSubmit={(e) => e.preventDefault()}>
             <input
@@ -71,7 +71,7 @@ class Login extends Component {
             {loading ? <Loading /> : <span />}
           </form>
           {redirect ? <Redirect to="/search" /> : null}
-        </main>
+        </div>
       </div>
     );
   }

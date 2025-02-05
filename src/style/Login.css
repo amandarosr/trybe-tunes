@@ -1,35 +1,67 @@
 .page-login {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 input {
-    text-align: center;
-    /* border-radius: 20px; */
-}
-
-.page-login main {
-    /* backdrop-filter: blur(10px); */
-    /* background-color: red; */
-    box-shadow: 0 25.6px 57.6px 0 rgb(0 0 0 / 22%), 0 4.8px 14.4px 0 rgb(0 0 0 / 18%);
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 55%;
-    width: min(28rem, 70%);
+  text-align: center;
+  /* border-radius: 20px; */
 }
 
 .login-title {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .page-login form {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+.page-main {
+  background-color: rgb(230, 230, 250, 0.25);
+  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: min(60%, 28rem);
+  width: min(25rem, 70%);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.page-main:after {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 90%;
+  width: 90%;
+  margin: 0 auto;
+  filter: blur(40px);
+  transform: scale(1.3);
+  background: linear-gradient(90deg, rgb(229, 158, 132), #ac87da);
+  background-size: 200% 200%;
+  animation: animateGlow 7s ease infinite;
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }

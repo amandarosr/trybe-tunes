@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: radial-gradient(rgb(175, 131, 229), transparent),
-    linear-gradient(90deg, rgb(45, 45, 120), transparent),
+  background: radial-gradient(#af83e5, transparent),
+    linear-gradient(90deg, #2d2d78, transparent),
     linear-gradient(-90deg, coral, transparent);
 
   background-blend-mode: screen;

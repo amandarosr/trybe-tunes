@@ -11,7 +11,7 @@ import NotFound from './pages/NotFound';
 class App extends React.Component {
   render() {
     return (
-      <div className='fullpage'>
+      <div className="fullpage">
         <Switch>
           <Route exact path="/" component={ Login } />
           <Route path="/search" component={ Search } />
