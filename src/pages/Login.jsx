@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Redirect } from "react-router-dom";
 import { createUser } from "../services/userAPI";
 import Loading from "../components/Loading";
-import headphones from "../extra/headphones.png";
+import vinyl from "../extra/vinyl-record.png";
 import "../style/Login.css";
 
 class Login extends Component {
@@ -43,7 +43,7 @@ class Login extends Component {
     return (
       <div className="page-login">
         <div className="page-main">
-          <img alt="logo" src={headphones} className="login-logo"/>
+          <img alt="logo" src={vinyl} className="login-logo"/>
           <h1 className="login-title">noTunes</h1>
           <form onSubmit={(e) => e.preventDefault()}>
             <input
