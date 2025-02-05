@@ -65,7 +65,7 @@ class Login extends Component {
             <button
               type="submit"
               data-testid="login-submit-button"
-              // disabled={emailInput.length < num}
+              disabled={emailInput.length < num}
               onClick={() => this.onSaveInput(nameInput, emailInput)}
             >
               Entrar
