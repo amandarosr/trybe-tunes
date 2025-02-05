@@ -9,21 +9,22 @@
 input {
   box-shadow: 3px 3px 6px 0px #ccdbe8 inset,
     -3px -3px 6px 1px rgba(255, 255, 255, 0.5) inset;
-  border-radius: 20px;
+  border-radius: 25px;
   border: none;
   text-align: center;
   font-size: 16px;
   height: 35px;
-  width: 250px;
+  width: 240px;
   margin: 5px 0;
 }
 
 button {
   border-radius: 20px;
   border: none;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   height: 40px;
   font-size: 20px;
+  /* font-family: TitleFont; */
   margin: 10px 0;
   outline: 0;
   text-align: center;
@@ -36,14 +37,22 @@ button {
   background: linear-gradient(286deg, #af83e5, #a981c4 50%, #c767bf);
 }
 
+.login-logo {
+    height: 90px;
+    margin-bottom: -40px;
+}
+
 .login-title {
-  margin: 60px 0;
+  color: #671d61;
+  font-family: TitleFont;
+  font-size: 62px;
+  margin: 0 0 -10px;
 }
 
 .page-login form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 .page-main {
@@ -54,7 +63,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: min(60%, 28rem);
+  height: min(60%, 30rem);
   width: min(25rem, 70%);
   margin-bottom: 30px;
   position: relative;
