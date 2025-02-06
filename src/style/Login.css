@@ -39,7 +39,6 @@ button {
   cursor: pointer;
   border: 0;
   color: #fff;
-  background: #00d301;
   background: -webkit-linear-gradient(-196deg, #af83e5, #a981c4 50%, #c767bf);
   background: -webkit-linear-gradient(164deg, #af83e5, #a981c4 50%, #c767bf);
   background: linear-gradient(286deg, #af83e5, #a981c4 50%, #c767bf);

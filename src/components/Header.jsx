@@ -18,13 +18,13 @@ class Header extends Component {
         <nav>
           <Link
             to="/search"
-            className={path === "/search" ? "link current-page" : "link"}
+            className={path === "/search" ? "link current-page" : "link link-search"}
           >
             Pesquisar
           </Link>
           <Link
             to="/favorites"
-            className={path === "/favorites" ? "link current-page" : "link"}
+            className={path === "/favorites" ? "link current-page" : "link link-fav"}
           >
             Favoritos
           </Link>

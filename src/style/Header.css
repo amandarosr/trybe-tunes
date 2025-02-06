@@ -10,7 +10,7 @@ header {
 }
 
 .username-title {
-    color: #671D61;
+  color: #671d61;
   display: flex;
   align-items: center;
 }
@@ -26,27 +26,35 @@ header {
 }
 
 nav {
-  /* background-color: red; */
-  border: 2px solid #671D61;
+  border: 2px solid #671d61;
   border-radius: 30px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  height: 55px;
-  width: 20%;
+  justify-content: space-between;
+  height: 50px;
+  width: 22rem;
   margin-right: 60px;
+  padding: 0;
 }
 
 nav:hover {
-  background-color: rgba(182, 85, 174, 0.2);
+  background-color: rgb(173, 131, 219, 0.2);
 }
 
 nav .link {
-  padding: 0 20px;
+  padding: 0 15px;
+}
+
+.link-fav {
+  margin-right: 30px;
+}
+
+.link-search {
+  margin-left: 30px;
 }
 
 .link {
-    color: #671D61;
+  color: #671d61;
   font-size: 24px;
   text-decoration: none;
 }
@@ -55,11 +63,13 @@ nav .link {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #671D61;
+  background: -webkit-linear-gradient(-196deg, #9466cd, #8864a0 50%, #671d61);
+  background: -webkit-linear-gradient(164deg, #9466cd, #8864a0 50%, #671d61);
+  background: linear-gradient(286deg, #9466cd, #8864a0 50%, #671d61);
   color: lavender;
   border-radius: 30px;
   height: 100%;
-  width: 48%;
+  width: 45%;
 }
 
 /* .link:hover {
