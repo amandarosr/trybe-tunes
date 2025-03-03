@@ -1,6 +1,6 @@
 @font-face {
   font-family: "TitleFont";
-  src: url("./extra/Artbrush.ttf") format("truetype");
+  src: url("./extra/Mochica_PERSONAL_USE_ONLY.otf") format("truetype");
 }
 
 @font-face {
@@ -19,9 +19,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: radial-gradient(#d3b4fb, transparent),
-    linear-gradient(45deg, #af83e5, transparent),
-    linear-gradient(-90deg, #f8a78a, transparent);
+  background: radial-gradient(#8ab6bf, transparent),
+    linear-gradient(45deg, #967bd0, transparent),
+    linear-gradient(-45deg, #f4bb54, transparent);
 
   background-blend-mode: screen;
   height: 100vh;

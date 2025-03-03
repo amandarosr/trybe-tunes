@@ -10,15 +10,16 @@ header {
 }
 
 .username-title {
-  color: #671d61;
+  color: #513983;
   display: flex;
   align-items: center;
 }
 
 .username-title h3 {
-  font-size: 43px;
+  font-size: 40px;
   font-family: TitleFont;
-  margin: 0 5px;
+  font-weight: 100;
+  margin: 0 10px;
 }
 
 .header-logo {
@@ -26,13 +27,13 @@ header {
 }
 
 nav {
-  border: 2px solid #671d61;
+  /* border: 2px solid #671d61; */
   border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 50px;
-  width: 22rem;
+  width: 40%;
   margin-right: 60px;
   padding: 0;
 }
@@ -50,23 +51,26 @@ nav .link {
 }
 
 .link-search {
-  margin-left: 30px;
+  margin: 30px;
 }
 
 .link {
-  color: #671d61;
-  font-size: 24px;
+  color: #513983;
+  font-size: 25px;
+  font-family: TitleFont;
   text-decoration: none;
+  text-align: center;
+  width: 33%;
 }
 
 .current-page {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: -webkit-linear-gradient(-196deg, #9466cd, #8864a0 50%, #671d61);
-  background: -webkit-linear-gradient(164deg, #9466cd, #8864a0 50%, #671d61);
-  background: linear-gradient(286deg, #9466cd, #8864a0 50%, #671d61);
-  color: lavender;
+  background: -webkit-linear-gradient(-196deg, #9f86d7, #4a8793 50%);
+  background: -webkit-linear-gradient(164deg, #9f86d7, #4a8793 50%);
+  background: linear-gradient(286deg, #9f86d7, #4a8793 50%);
+  color: white;
   border-radius: 30px;
   height: 100%;
   width: 45%;

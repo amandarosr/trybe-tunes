@@ -41,7 +41,7 @@ class Search extends Component {
         <Header />
         <br />
         { !loading ? (
-          <form>
+          <form className='search-form'>
             <input
               type="text"
               data-testid="search-artist-input"
