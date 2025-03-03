@@ -1,10 +1,10 @@
 .page-login {
   position: relative;
-  background: radial-gradient(#af83e5, transparent),
-    linear-gradient(45deg, #2d2d78, transparent),
-    linear-gradient(-45deg, coral, transparent);
+  background: radial-gradient(#8ab6bf, transparent),
+    linear-gradient(45deg, #513983, transparent),
+    linear-gradient(-45deg, #f4bb54, transparent);
 
-  background-blend-mode: screen;
+  background-blend-mode: lighten;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,10 +38,10 @@ button {
   text-align: center;
   cursor: pointer;
   border: 0;
-  color: #fff;
-  background: -webkit-linear-gradient(-196deg, #af83e5, #a981c4 50%, #c767bf);
-  background: -webkit-linear-gradient(164deg, #af83e5, #a981c4 50%, #c767bf);
-  background: linear-gradient(286deg, #af83e5, #a981c4 50%, #c767bf);
+  color: #f0ebd9;
+  background: -webkit-linear-gradient(-196deg, #9f86d7, #8ab6bf 50%, #ddbc7e);
+  background: -webkit-linear-gradient(164deg, #9f86d7, #8ab6bf 50%, #ddbc7e);
+  background: linear-gradient(286deg, #9f86d7, #8ab6bf 50%, #ddbc7e);
 }
 
 .login-logo {
@@ -50,7 +50,7 @@ button {
 }
 
 .login-title {
-  color: #671d61;
+  color: #513983;
   font-family: TitleFont;
   font-size: 62px;
   margin: 0 0 -10px;
@@ -88,8 +88,8 @@ button {
   margin: 0 auto;
   filter: blur(40px);
   transform: scale(1.3);
-  background: linear-gradient(90deg, rgb(229, 158, 132), #bc99e7);
-  background-size: 200% 200%;
+  background: linear-gradient(90deg, #d2c17d, #8ab6bf);
+  background-size: 150% 150%;
   animation: animateGlow 6s ease infinite;
 }
 
