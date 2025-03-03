@@ -3,6 +3,7 @@ import searchAlbumsAPI from '../services/searchAlbumsAPI';
 import Header from '../components/Header';
 import Loading from '../components/Loading';
 import AlbumCard from '../components/AlbumCard';
+import '../style/Search.css';
 
 class Search extends Component {
   state = {
@@ -44,7 +45,7 @@ class Search extends Component {
           <form className='search-form'>
             <input
               type="text"
-              data-testid="search-artist-input"
+              className="search-input"
               name="searchInput"
               value={ searchInput }
               onChange={ this.handleChange }
@@ -52,7 +53,7 @@ class Search extends Component {
             />
             <button
               type="submit"
-              data-testid="search-artist-button"
+              className="search-button"
               disabled={ searchInput.length < 2 }
               onClick={ this.clickSearchButton }
             >
